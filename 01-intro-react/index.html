@@ -12,5 +12,22 @@
 </head>
 <body>
     
+    <div id="root"></div>
+
+    <script type="text/babel">
+
+        //Referencia al div 'root' que declaramos anteriormente
+        const divRoot = document.querySelector('#root');
+
+        const nombre = 'mundo'
+
+        //Se declara una simple tag que dice 'Hola mundo', 'mundo' lo saca de la variable nombre
+        const h1Tag = <h1>Hola {nombre}</h1>;
+
+        //Utilizamos ReactDOM para renderizar nuestra tag en el div 'root'
+        ReactDOM.render(h1Tag, divRoot)
+
+    </script>
+
 </body>
 </html>
